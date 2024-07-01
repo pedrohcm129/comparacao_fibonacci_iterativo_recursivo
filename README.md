@@ -1,1 +1,15 @@
-# comparacao_fibonacci_iterativo_recursivo
+# Algoritmos de Sequência de Fibonacci recursivo e iterativo: uma análise comparativa
+
+### Introdução
+
+O matemático Leonardo Pisano adquiriu seu conhecimento por meio de viagens pelo Mediterrâneo. No período que regressou para sua cidade natal, colocou seus conhecimentos em prática e produziu suas três principais obras, a saber: Liber Abbaci, Pratica Geometrae, Liber  Quadratorum, O Liber Abbaci. O livro _O Liber Abbaci_ tem como objetivo estudo do cálculo aritmético contendo regras para o cálculo com números indo-arábicos e problemas matemáticos. 
+
+Dentre os problemas contidos no livro, ressalta-se o _O problema dos coelhos_ que compreende ao número de casais de uma população de coelhos após doze meses. O problema parte de algumas suposições: i) No primeiro mês existe apenas um casal; ii) Os casais se reproduzem apenas no segundo mês de vida; iii) Todos os meses o casal dá à luz a um novo casal. Dessa forma, no primeiro mês existe apenas um par de coelhos filhotes. Ao longo do segundo mês existe um par de coelhos, agora adulto. No terceiro mês nasce um par de filhotes, ou seja, existe um par de coelhos adultos e um par de coelhos filhotes. Durante o quarto mês existem três pares de coelhos, pois o par inicial deu à luz a um novo par de filhotes, enquanto, o par de filhotes anterior virou adulto. Assim, chegando ao quinto mês existe cinco pares de coelhos, pois os dois pares de coelhos adultos deram à luz a dois pares de coelhos filhotes e os pares de coelhos filhotes anteriores, agora, são adultos, e assim sucessivamente. À vista disso, depois de um determinado tempo é perceptível que o número de coelhos é igual ao o número de pares do mês anterior mais o número de pares do mês anterior ao anterior.
+
+Considerando o problema mostrado e supondo que não haja mortes na população de coelhos, a generalização é por: $f_n=f_{n-1}+f_{n-2};n\geq2;f_1=f_2=1$. Dessa forma, essa relação determina uma sequência de números chamada de _Sequência de Fibonacci_, que signigica _Filho de Bonaccio_.
+
+### Materiais e Métodos
+
+A construção do pipeline para análise sucedeu através da _Integrated development environment_ (IDE) chamada _VsCode_ (1.82.2), que proporcionou uma maior facilidade no momento de programar, uma vez que, propõem algumas regalias ao desenvolvedor, como, por exemplo a possibilidade de melhor estruturação do script, auxiliando no aumento da produtividade. Além disso, foi utilizado uma extensão do _VsCode_ que prove suporte a _Jupyter Notebooks_ que permite a criação de células de código e texto em um mesmo documento, promovendo uma maior organização e melhor documentação do código. Por seguinte, é válido ressaltar que para ser realizada uma análise mais precisa, foi executado dez vezes ambos os algorítimos para uma mesma entrada, visando identificar potenciais erros e \textit{outliers}.
+
+Ademais, é válido ressaltar as condições na qual foi realizado os teste. Assim, o computador de teste é equipado com um processador Intel Core i3-8100 operando a 3.6GHz, 16GB de memória RAM a 2400MHz, sistema operacional utilizado foi o Windows 11 (22H2). No momento do teste, a máquina foi destinada apenas a tarefa do teste, não sendo utilizada para nenhum outro fim, planejando propor uma maior fidelidade para a análise dos resultados.
